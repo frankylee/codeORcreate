@@ -1,14 +1,9 @@
 
-
-
-//let navBar = document.getElementById("home");
-//navBar.innerHTML = "Hello";
-
 let navBar = document.getElementById("home");
 navBar.innerHTML = createNavBar();
 
-
-export default function createNavBar() {
+// Creates a navbar for each page 
+function createNavBar() {
 
     return `
     <div class="container">
@@ -19,7 +14,7 @@ export default function createNavBar() {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="./index.html">Event Registration</a>
+      <a class="navbar-brand" href="./index.html">Navigation</a>
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
@@ -33,8 +28,4 @@ export default function createNavBar() {
   </div>`;
 }
 
-
-
-//module.exports = createNavBar;
-
-//module.exports = createNavBar();
+window.onload = createNavBar();
