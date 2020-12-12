@@ -1,10 +1,14 @@
 
 
 
+//let navBar = document.getElementById("home");
+//navBar.innerHTML = "Hello";
+
 let navBar = document.getElementById("home");
 navBar.innerHTML = createNavBar();
 
-function createNavBar() {
+
+export default function createNavBar() {
 
     return `
     <div class="container">
@@ -31,4 +35,6 @@ function createNavBar() {
 
 
 
-module.exports = createNavBar();
+//module.exports = createNavBar;
+
+//module.exports = createNavBar();
