@@ -8,76 +8,124 @@
     <title>Providers | Digital Equity Solutions for Lane County</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/style.css">
 </head>
 
 <body>
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white">
         <!--NavBar is created programmatically -->
     </nav>
-    <div class="container">
-        <header>
-            <h1>All Providers</h1>
-        </header>
+
+    <header class="container-fluid mb-5">
+        <div class="row align-items-center justify-content-between mx-xl-5 py-md-5">
+            <div class="col-12 col-lg-7 col-xl-6 p-lg-5">
+                <h1 class="h2 mb-4">Find the provider that best meets your needs.</h1>
+                    <p>
+                        Browse our collection of service providers in Lane County with assistance programs for those 
+                        in need of internet service within the home. Visit the provider’s website for more information 
+                        on how to qualify and apply.
+                    </p>
+            </div>
+            <div class="col-9 col-md-7 col-lg-5 mx-auto mb-5 mb-lg-0 order-first order-lg-last">
+                <img src="./img/undraw_best_place_r685.svg" class="img-fluid" aria-hidden="true">
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid mb-5">
         <!-- Begin three card row -->
         <div class="row">
             <!-- Begin one provider card -->
-            <div class="card col-lg-4 col-md-6 col-12" id="provider-card">
-                <div class="card-body">
-                    <div class="card-header" id="name">Provider Name</div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card" id="provider-card">
                     <div class="card-body">
-                        <div id="street-address">1234 SW This Place St <br /> Eugene, OR 97403 </div>
-                        <div class="row">
-                            <div class="align-self-center col-8" id="phone">Phone</div>
-                            <button class="align-self-center btn btn-sm btn-primary col-4">Learn More</button>
+                        <h4 class="card-title" class="provider">Provider Name</h4>
+                        <h5 class="program mb-4">Internet Assistance Program</h5>
+                        <div class="row align-items-center">
+                            <div class="col-7" id="phone">
+                                <address class="street-address mb-0">
+                                    1234 SW This Place St <br />
+                                    Eugene, OR 97403
+                                </address>
+                                <p class="phone">555-324-6548</p>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-sm btn-primary btn-block py-3">Learn More</button>
+                            </div>
                         </div>
-                        <div id="email">Email</div>
-                        <div id="web">Web Page</div>
-                    </div>
-                    <div class="card-footer">
-                        <div id="demographics">
-                            <div>Demographic pills</div>
+                        <p class="email mb-0">support@providerdomain.com</p>
+                        <p class="website">www.providerdomain.com</p>
+                        <div class="demographics">
+                            <span class="badge badge-pill badge-light px-3 py-2 my-1">low-income</span>
+                            <span class="badge badge-pill badge-light px-3 py-2 my-1">4J students</span>
+                            <span class="badge badge-pill badge-light px-3 py-2 my-1">forest fire</span>
+                            <span class="badge badge-pill badge-light px-3 py-2 my-1">underserved communities</span>
+                            <span class="badge badge-pill badge-light px-3 py-2 my-1">veterans</span>
+                            <span class="badge badge-pill badge-light px-3 py-2 my-1">seniors</span>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- End one provider card -->
             <!-- Begin one provider card -->
-            <div class="card col-lg-4 col-md-6 col-12" id="provider-card">
-                <div class="card-body">
-                    <div class="card-header" id="name">Provider Name</div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card" id="provider-card">
                     <div class="card-body">
-                        <div id="street-address">1234 SW This Place St <br /> Eugene, OR 97403 </div>
-                        <div class="row">
-                            <div class="align-self-center col-8" id="phone">Phone</div>
-                            <button class="align-self-center btn btn-sm btn-primary col-4">Learn More</button>
+                        <h4 class="card-title" class="provider">Provider Name</h4>
+                        <h5 class="program mb-4">Internet Assistance Program</h5>
+                        <div class="row align-items-center">
+                            <div class="col-7" id="phone">
+                                <address class="street-address mb-0">
+                                    1234 SW This Place St <br />
+                                    Eugene, OR 97403
+                                </address>
+                                <p class="phone">555-324-6548</p>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-sm btn-primary btn-block py-3">Learn More</button>
+                            </div>
                         </div>
-                        <div id="email">Email</div>
-                        <div id="web">Web Page</div>
-                    </div>
-                    <div class="card-footer">
-                        <div id="demographics">
-                            <div>Demographic pills</div>
+                        <p class="email mb-0">support@providerdomain.com</p>
+                        <p class="website">www.providerdomain.com</p>
+                        <div class="demographics">
+                            <span class="badge badge-pill badge-light px-3 py-2 my-1">low-income</span>
+                            <span class="badge badge-pill badge-light px-3 py-2 my-1">4J students</span>
+                            <span class="badge badge-pill badge-light px-3 py-2 my-1">forest fire</span>
+                            <span class="badge badge-pill badge-light px-3 py-2 my-1">underserved communities</span>
+                            <span class="badge badge-pill badge-light px-3 py-2 my-1">veterans</span>
+                            <span class="badge badge-pill badge-light px-3 py-2 my-1">seniors</span>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- End one provider card -->
             <!-- Begin one provider card -->
-            <div class="card col-lg-4 col-md-6 col-12" id="provider-card">
-                <div class="card-body">
-                    <div class="card-header" id="name">Provider Name</div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card" id="provider-card">
                     <div class="card-body">
-                        <div id="street-address">1234 SW This Place St <br /> Eugene, OR 97403 </div>
-                        <div class="row">
-                            <div class="align-self-center col-8" id="phone">Phone</div>
-                            <button class="align-self-center btn btn-sm btn-primary col-4">Learn More</button>
+                        <h4 class="card-title" class="provider">Provider Name</h4>
+                        <h5 class="program mb-4">Internet Assistance Program</h5>
+                        <div class="row align-items-center">
+                            <div class="col-7" id="phone">
+                                <address class="street-address mb-0">
+                                    1234 SW This Place St <br />
+                                    Eugene, OR 97403
+                                </address>
+                                <p class="phone">555-324-6548</p>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-sm btn-primary btn-block py-3">Learn More</button>
+                            </div>
                         </div>
-                        <div id="email">Email</div>
-                        <div id="web">Web Page</div>
-                    </div>
-                    <div class="card-footer">
-                        <div id="demographics">
-                            <div>Demographic pills</div>
+                        <p class="email mb-0">support@providerdomain.com</p>
+                        <p class="website">www.providerdomain.com</p>
+                        <div class="demographics">
+                            <span class="badge badge-pill badge-light px-3 py-2 my-1">low-income</span>
+                            <span class="badge badge-pill badge-light px-3 py-2 my-1">4J students</span>
+                            <span class="badge badge-pill badge-light px-3 py-2 my-1">forest fire</span>
+                            <span class="badge badge-pill badge-light px-3 py-2 my-1">underserved communities</span>
+                            <span class="badge badge-pill badge-light px-3 py-2 my-1">veterans</span>
+                            <span class="badge badge-pill badge-light px-3 py-2 my-1">seniors</span>
                         </div>
                     </div>
                 </div>
@@ -85,7 +133,14 @@
             <!-- End one provider card -->
         </div>
         <!-- End three card row-->
-    </div>
+    </main>
+
+    <footer class="pt-4 pb-4">
+        <div class="text-center text-muted small">&copy; 2020 Digital Equity Solutions for Lane County</div>
+    </footer>
+
+    
+
     <script src="./src/nav.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
