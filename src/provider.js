@@ -12,7 +12,6 @@ class Provider {
         this.renderProviderList = this.renderProviderList.bind(this);
         this.renderProviderListItem = this.renderProviderListItem.bind(this);
         this.renderProviderDemographics = this.renderProviderDemographics.bind(this);
-        this.renderProviderDetails = this.renderProviderDetails.bind(this);
         this.addEventListeners = this.addEventListeners.bind(this);
         // begin app
         this.renderProviderList();
@@ -25,8 +24,9 @@ class Provider {
 
     addEventListeners() {
         // add listeners after list is rendered to DOM
-        for (let i = 0; i < this.providerData.length; i++) 
-            document.querySelector(`[data-index="${i}"]`).onclick = this.renderProviderDetails;
+        for (let i = 0; i < this.providerData.length; i++) {
+            document.querySelector(`[data-index="${i}"]`).onclick = this.renderProviderDetails.bind(this, i);
+        }
     }
 
     renderProviderList() { 
@@ -95,11 +95,11 @@ class Provider {
 
     //assuming index for provider is passed in based on what button is clicked. 
     //index is assigned in provider.js
-    renderProviderDetails() {
+    renderProviderDetails(index) {
         // var index = this.id;
         console.log(index);
-        // let name = this.providerData[index].name;
-        // document.getElementById("provider-name").innerHTML = name; 
+        //let name = this.providerData[index].name;
+        //document.getElementById("provider-name").innerHTML = name; 
         
         let provider = this.providerData[index];
         let demographicHTML = this.renderProviderDemographics(provider);
