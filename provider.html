@@ -21,64 +21,13 @@
             <ol class="breadcrumb bg-white">
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
                 <li class="breadcrumb-item"><a href="./providers.html">Providers</a></li>
-                <li class="breadcrumb-item active" aria-current="page">${provider-name}</li>
+                <li class="breadcrumb-item active" aria-current="page" id="provider-name">${provider-name}</li>
             </ol>
         </nav>
     </header>
 
-    <main class="container mb-5">
-        <section class="row align-items-center mb-5">
-            <div class="col-12 col-lg-7 col-xl-6 mb-5 mb-lg-0">
-                <h1 class="provider mb-4">Provider Name</h1>
-                <address class="street-address mb-0">
-                    1234 SW This Place St <br />
-                    Eugene, OR 97403
-                </address>
-                <p class="phone">555-324-6548</p>
-                <p class="email mb-0">support@providerdomain.com</p>
-                <p class="website">www.providerdomain.com</p>
-                <div class="demographics my-4">
-                    <span class="badge badge-pill badge-light px-3 py-2 my-1">low-income</span>
-                    <span class="badge badge-pill badge-light px-3 py-2 my-1">4J students</span>
-                    <span class="badge badge-pill badge-light px-3 py-2 my-1">forest fire</span>
-                    <span class="badge badge-pill badge-light px-3 py-2 my-1">underserved communities</span>
-                    <span class="badge badge-pill badge-light px-3 py-2 my-1">veterans</span>
-                    <span class="badge badge-pill badge-light px-3 py-2 my-1">seniors</span>
-                </div>
-                <button class="btn btn-sm btn-primary btn-block px-5 py-2">View more</button>
-            </div>
-            <div class="col-9 col-md-7 col-lg-5 mx-auto d-none d-lg-block">
-                <img src="./img/undraw_software_engineer_lvl5.svg" class="img-fluid" aria-hidden="true">
-            </div>
-        </section>
+    <main class="container mb-5" id="provider-details">
         
-        <section class="mb-5 py-lg-5">
-            <h2 class="program mb-4">Internet Assistance Program</h2>
-            <p>
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum 
-                has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-            </p>
-            <p>
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-            </p>
-            <p>
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                centuries, but also the leap into electronic typesetting, remaining essentially unchanged but also the 
-                leap into electronic typesetting, remaining essentially unchanged.
-            </p>
-
-            <p>
-                To learn more about this program, please visit: <a href="#" target="_blank">http://loremipsumdolorsit.amet</a>.
-            </p>
-        </section>
-
     </main>
 
     <section class="container-fluid px-lg-5 mb-5">
@@ -93,7 +42,6 @@
     </footer>
 
 
-    <script src="./src/nav.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -105,7 +53,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="src/nav.js"></script>
+    <script src="dist/nav.js"></script>
+    <script src="dist/providerSingleView.js"></script>
 </body>
 
 </html>

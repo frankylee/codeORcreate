@@ -1,4 +1,5 @@
 // Creates a navbar for each page 
+
 function createNavBar() {
  
   const navbarHTML=  `
@@ -29,7 +30,7 @@ function createNavBar() {
 
 function renderNavBar() {
 
-  this.createNavBar();
+  createNavBar();
 
   let activeLocation = window.location.href;
 
@@ -46,5 +47,6 @@ function renderNavBar() {
     activeLink.classList.add("active");
   }
 }
+
 
 window.onload = renderNavBar();
