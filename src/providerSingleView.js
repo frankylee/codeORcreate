@@ -31,7 +31,6 @@ class ProviderSingleView {
                     ${provider.cityStateZip}
                 </address>
                 <p class="phone">${provider.phone}</p>
-                <p class="website">${provider.url}</p>
                 <div class="demographics my-4">
                     ${demographicHTML}
                 </div>
