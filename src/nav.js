@@ -1,4 +1,7 @@
+import getProviders from './providerData'
+
 // Creates a navbar for each page 
+
 function createNavBar() {
  
   const navbarHTML=  `
@@ -47,4 +50,9 @@ function renderNavBar() {
   }
 }
 
-window.onload = renderNavBar();
+function getProviderData() {
+    let data = getProviders();
+    console.log(data[0]);
+}
+
+window.onload = getProviderData();
