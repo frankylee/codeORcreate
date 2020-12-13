@@ -18,8 +18,6 @@ class Provider {
         this.addEventListeners();
         //use this to see what's included in the objects, if needed
         //console.log(this.providerData);
-
-        // document.getElementById("provider-details").innerHTML = this.renderProvider(0);
     }
 
     addEventListeners() {
@@ -32,6 +30,8 @@ class Provider {
     renderProviderList() { 
         //renders the provider list UI by taking each provider and generating a provider card
         const itemsHTML = this.providerData.map((provider, index) => this.renderProviderListItem(provider, index)).join('');
+        this.providerCardUI.classList.add('container-fluid');
+        this.header.classList.add('container-fluid');
         this.providerCardUI.innerHTML = `
             <div class="row align-items-stretch" id="provider-list">
                 ${itemsHTML}
@@ -58,27 +58,28 @@ class Provider {
         // takes a provider and returns the html for the demographic pills
         let demographicHTML = this.renderProviderDemographics(provider); 
         let providerDetails = `
-        <div class="col-12 col-md-6 col-xl-4 mb-4">
-            <div class="card" id="provider-card">
-                <div class="card-body">
-                    <h4 class="provider card-title">${provider.name}</h4>
-                    <h5 class="program mb-4">${provider.program}</h5>
-                    <div class="row align-items-center mb-4">
-                        <div class="details col-7">
-                            <address class="street-address mb-0">${provider.streetAddress} <br /> ${provider.cityStateZip}
-                            </address>
-                            <p class="phone">${provider.phone}</p>
+            <div class="col-12 col-md-6 col-xl-4 mb-4">
+                <div class="card" id="provider-card">
+                    <div class="card-body">
+                        <h4 class="provider card-title">${provider.name}</h4>
+                        <h5 class="program mb-4">${provider.program}</h5>
+                        <div class="row align-items-center mb-4">
+                            <div class="details col-7">
+                                <address class="street-address mb-0">${provider.streetAddress} <br /> ${provider.cityStateZip}
+                                </address>
+                                <p class="phone">${provider.phone}</p>
+                            </div>
+                            <div class="col">
+                            <a class="btn btn-primary btn-block text-white py-2" data-index="${index}">View more</a>
+                            </div>
                         </div>
-                        <div class="col">
-                        <a class="btn btn-primary btn-block text-white py-2" data-index="${index}">View more</a>
+                        <div class="demographics">
+                            ${demographicHTML} 
                         </div>
-                    </div>
-                    <div class="demographics">
-                        ${demographicHTML} 
                     </div>
                 </div>
             </div>
-        </div>`;
+        `;
         return providerDetails;
     }
 
@@ -96,14 +97,8 @@ class Provider {
     //assuming index for provider is passed in based on what button is clicked. 
     //index is assigned in provider.js
     renderProviderDetails(index) {
-        // var index = this.id;
-        console.log(index);
-        //let name = this.providerData[index].name;
-        //document.getElementById("provider-name").innerHTML = name; 
-        
         let provider = this.providerData[index];
         let demographicHTML = this.renderProviderDemographics(provider);
-
         const html = `
             <section class="row align-items-center mb-5">
                 <div class="col-12 col-lg-7 col-xl-6 mb-5 mb-lg-0">
@@ -126,23 +121,25 @@ class Provider {
                 <h2 class="program mb-4">Internet Assistance Program</h2>
                 <p>${provider.description}</p>
                 <p>
-                    To learn more about this program, please visit: <a href="#" target="_blank">${provider.url}</a>.
+                    To learn more about this program, please visit: <a href="${provider.url}" target="_blank">${provider.url}</a>.
                 </p>
             </section>
         `;
-        // return html;
-        // document.getElementById("provider-details").innerHTML = html;
-        this.providerCardUI.classList.remove('container-fluid');
+
+        // this.providerCardUI.classList.remove('container-fluid');
         this.providerCardUI.classList.add('container');
+        this.header.classList.add('container');
         this.providerCardUI.innerHTML = html;
         this.header.innerHTML = `
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-white">
-                    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="./providers.html">Providers</a></li>
-                    <li class="breadcrumb-item active" aria-current="page" id="provider-name">${provider.name}</li>
-                </ol>
-            </nav>
+            <div id="nav-breadcrum">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-white">
+                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="./providers.html">Providers</a></li>
+                        <li class="breadcrumb-item active" aria-current="page" id="provider-name">${provider.name}</li>
+                    </ol>
+                </nav>
+            </div>
         `;
     }
 
