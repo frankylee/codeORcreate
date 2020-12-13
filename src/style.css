@@ -1,3 +1,7 @@
-/* .btn-block {
-    max-width: 600px;
-} */
+.btn-primary {
+    background-color: #407bf0;
+}
+
+.badge-light {
+    background-color: #E5E5E5;
+}
