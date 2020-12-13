@@ -2,7 +2,7 @@
     "providers": {
         "comcast": {
             "program": "Internet Essentials",
-            "description": "https://www.xfinity.com/support/articles/comcast-broadband-opportunity-program",
+            "description": "Internet Essentials from Comcast brings affordable, high-speed Internet to your home so you can have greater access to homework, job opportunities, healthcare and benefits, education resources and more.",
             "url": "https://apply.internetessentials.com/",
             "phone": "(800) 266-2278",
             "address": "1063 Valley River Way, Eugene, OR 97401",
@@ -15,8 +15,8 @@
             ]
         },
         "centuryLink": {
-            "program": "Internet Basics",
-            "description": "https://www.oregon.gov/puc/Pages/Oregon-Lifeline.aspx",
+            "program": "Internet Basics (Oregon Lifeline)",
+            "description": "Oregon Lifeline is a federal and state government program that reduces the monthly cost of phone or broadband service for qualifying low-income Oregon households.",
             "url": "https://www.centurylink.com/local/or/eugene.html",
             "phone": "(541) 315-3011",
             "address": "440 Coburg Rd, Eugene, OR 97401",
@@ -30,7 +30,7 @@
         },
         "emerald": {
             "program": "Lower cost broadband internet",
-            "description": "https://www.emeraldbroadband.com/about-2/",
+            "description": "Emerald Broadband is Lane County’s premiere public benefit internet service provider, dedicated to improving communities by offering superior service and providing a quality connection at an affordable price.",
             "url": "https://www.emeraldbroadband.com/pricing/",
             "phone": "(541) 363-0260",
             "address": "859 Willamette St. Ste. 250, Eugene OR 97401",
@@ -56,7 +56,7 @@
         },
         "accessWireless": {
             "program": "Lifeline Assistance program",
-            "description": "Free monthly allotment of data",
+            "description": "Free monthly allotment of data for low income families.",
             "url": "https://www.accesswireless.com/lifeline",
             "demographics": [
                 "seniors",
@@ -67,7 +67,7 @@
             ]
         },
         "cityOfEugene": {
-            "program": "Free public WiFi spots around Eugene",
+            "program": "Free public WiFi spots around Eugene.",
             "description": "Interactive map",
             "url": "https://www.wifimap.io/3072-eugene-free-wifi/map",
             "demographics": [

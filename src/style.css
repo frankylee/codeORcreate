@@ -1,8 +1,15 @@
-/* .btn-block {
+.btn-block {
     max-width: 600px;
 } */
 
 .active {
     background-color: blue;
     color: yellow;
+}
+.btn-primary {
+    background-color: #407bf0;
+}
+
+.badge-light {
+    background-color: #E5E5E5;
 }
