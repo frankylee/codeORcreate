@@ -14,7 +14,7 @@ export default function getProviders() {
                 "seniors",
                 "low income",
                 "veterans",
-                "forest fire victims",
+                "forest fire",
                 "4J students",
                 "COVID-19"
             ]
@@ -31,7 +31,7 @@ export default function getProviders() {
                 "seniors",
                 "low income",
                 "veterans",
-                "forest fire victims",
+                "forest fire",
                 "4J students",
                 "COVID-19"
             ]
@@ -62,7 +62,7 @@ export default function getProviders() {
                 "seniors",
                 "low income",
                 "veterans",
-                "forest fire victims",
+                "forest fire",
                 "4J students"
             ]
         },
@@ -78,7 +78,7 @@ export default function getProviders() {
                 "seniors",
                 "low income",
                 "veterans",
-                "forest fire victims",
+                "forest fire",
                 "4J students"
             ]
         },
@@ -94,7 +94,7 @@ export default function getProviders() {
                 "seniors",
                 "low income",
                 "veterans",
-                "forest fire victims",
+                "forest fire",
                 "4J students"
             ]
         },
@@ -110,7 +110,7 @@ export default function getProviders() {
                 "seniors",
                 "low income",
                 "veterans",
-                "forest fire victims",
+                "forest fire",
                 "4J students"
             ]
         },
@@ -126,7 +126,7 @@ export default function getProviders() {
                 "seniors",
                 "low income",
                 "veterans",
-                "forest fire victims",
+                "forest fire",
                 "4J students"
             ]
         },
@@ -142,7 +142,7 @@ export default function getProviders() {
                 "seniors",
                 "low income",
                 "veterans",
-                "forest fire victims",
+                "forest fire",
                 "4J students"
             ]
         },
@@ -158,7 +158,7 @@ export default function getProviders() {
                 "seniors",
                 "low income",
                 "veterans",
-                "forest fire victims",
+                "forest fire",
                 "4J students"
             ]
         }
