@@ -13,10 +13,10 @@ function createNavBar() {
         <li class="nav-item" id="home">
           <a class="nav-link mr-4 text-primary" href="./index.html">Home</a>
         </li>
-        <li class="nav-item" id="Providers">
+        <li class="nav-item" id="providers">
           <a class="nav-link mr-4" href="./providers.html">Providers</a>
         </li>
-        <li class="nav-item" id="More">
+        <li class="nav-item" id="more">
           <a class="nav-link" href="./about.html">Learn more</a>
         </li>
       </ul>
@@ -30,23 +30,20 @@ function createNavBar() {
 function renderNavBar() {
 
   this.createNavBar();
-  //get the parent element
-  let navBar = document.getElementById("navbar");
-  //get all the nav-items within the parent
-  let navBarItems = navBar.getElementsByClassName("nav-item");
 
-  //loop through the nav-items and add the active class to the current/clicked item
-  for (let i = 0; i < navBarItems.length; i++) {
-    navBarItems[i].addEventListener("click", function() {
-    let current = document.getElementsByClassName("active");
+  let activeLocation = window.location.href;
 
-    //do this only if there is an active class
-    if (current.length > 0) {
-    current[0].className = current[0].className.replace(" active", "");
-    }
-    //Finally, add the active class to the clicked item
-    this.className += " active";
-    });
+  if (activeLocation.includes("index")){
+    let activeLink = document.getElementById("home");
+    activeLink.classList.add("active");
+  }
+  else if (activeLocation.includes("provider")){
+    let activeLink = document.getElementById("providers");
+    activeLink.classList.add("active");
+  }
+  else if (activeLocation.includes("about")) {
+    let activeLink = document.getElementById("more");
+    activeLink.classList.add("active");
   }
 }
 
