@@ -1,30 +1,32 @@
 
-let navBar = document.getElementById("home");
+let navBar = document.getElementById("navbar");
 navBar.innerHTML = createNavBar();
 
 // Creates a navbar for each page 
 function createNavBar() {
 
-    return `
-    <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="./index.html">Home</a>
-    </div>
+  return `
+  <div class="container-fluid py-4">
+    <a class="navbar-brand" href="./index.html">Digital Equity Solutions for Lane County</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
     <div id="navbar" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-      <li><a href="./providers.html">Providers</a></li>
-      <li><a href="./provider.html">Provider</a></li>
-      <li><a href="./about.html">About</a></li>        
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link mr-4 text-primary" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mr-4" href="./providers.html">Providers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">Learn more</a>
+        </li>
       </ul>
     </div>
-    <!--/.nav-collapse -->
-  </div>`;
+  </div>
+  `;
 }
 
 window.onload = createNavBar();
