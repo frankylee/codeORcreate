@@ -1,11 +1,6 @@
 .btn-block {
     max-width: 600px;
 } 
-
-.active {
-    background-color: blue;
-    color: yellow;
-}
 .btn-primary {
     background-color: #407bf0;
 }
