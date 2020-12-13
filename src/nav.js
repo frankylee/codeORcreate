@@ -15,7 +15,7 @@ function createNavBar() {
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <a class="nav-link mr-4" href="./index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link mr-4 text-primary" href="./index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link mr-4" href="./providers.html">Providers</a>
