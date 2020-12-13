@@ -35,7 +35,7 @@ class ProviderSingleView {
                 <div class="demographics my-4">
                     ${demographicHTML}
                 </div>
-                <a class="btn btn-sm btn-primary btn-block px-5 py-2" href="${provider.url}>Visit Provider</a>
+                <a class="btn btn-sm btn-primary btn-block px-5 py-2" href="${provider.url}" target="_blank">Visit Provider</a>
             </div>
             <div class="col-9 col-md-7 col-lg-5 mx-auto d-none d-lg-block">
                 <img src="./img/undraw_software_engineer_lvl5.svg" class="img-fluid" aria-hidden="true">
