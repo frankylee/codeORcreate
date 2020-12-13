@@ -1,5 +1,3 @@
-import getProviders from './providerData'
-
 // Creates a navbar for each page 
 
 function createNavBar() {
@@ -32,7 +30,7 @@ function createNavBar() {
 
 function renderNavBar() {
 
-  this.createNavBar();
+  createNavBar();
 
   let activeLocation = window.location.href;
 
@@ -50,9 +48,5 @@ function renderNavBar() {
   }
 }
 
-function getProviderData() {
-    let data = getProviders();
-    console.log(data[0]);
-}
 
-window.onload = getProviderData();
+window.onload = renderNavBar();
