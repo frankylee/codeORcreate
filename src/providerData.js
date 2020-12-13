@@ -100,12 +100,12 @@ export default function getProviders() {
         },
         {
             name: "Xfinity/Comcast Free WiFi",
-            program: "Free public WiFi spots around Eugene",
-            description: "Free public WiFi spots around Eugene.",
+            program: "Free public WiFi spots",
+            description: "Free public WiFi spots around Eugene and Springfield.",
             url: "https://hotspots.wifi.xfinity.com/",
             phone: "",
             streetAddress: "",
-            cityStateZip: "Eugene, OR",
+            cityStateZip: "Eugene/Springfield, OR",
             demographics: [
                 "seniors",
                 "low income",
@@ -166,4 +166,3 @@ export default function getProviders() {
     ];
     return providers;
 }
-    
