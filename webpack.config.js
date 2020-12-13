@@ -5,7 +5,6 @@ module.exports = {
     provider: './src/provider.js',
     nav: './src/nav.js',
     providerData: './src/providerData.js',
-    providerSingleView: './src/providerSingleView.js'
   },
   output: {
     path: __dirname + "/dist",
