@@ -12,3 +12,6 @@
 .card {
     height: 100%;
 }
+.card .btn {
+    cursor: pointer;
+}
