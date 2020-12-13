@@ -8,3 +8,7 @@
 .badge-light {
     background-color: #E5E5E5;
 }
+
+.card {
+    height: 100%;
+}

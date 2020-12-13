@@ -17,7 +17,7 @@ class Providers {
     renderProviderList() { //renders the provider list UI by taking each provider and generating a provider card
 
         const itemsHTML = this.providerData.map((provider, index) => this.renderOneProvider(provider, index)).join('');
-        this.providerCardUI.innerHTML = `<div class="row" id="provider-list">${itemsHTML}</div>`;
+        this.providerCardUI.innerHTML = `<div class="row align-items-stretch" id="provider-list">${itemsHTML}</div>`;
     }
 
     renderOneProvider(provider, index) {
@@ -29,18 +29,16 @@ class Providers {
                 <div class="card-body">
                     <h4 class="provider card-title">${provider.name}</h4>
                     <h5 class="program mb-4">${provider.program}</h5>
-                    <div class="row align-items-center">
+                    <div class="row align-items-center mb-4">
                         <div class="details col-7">
                             <address class="street-address mb-0">${provider.streetAddress} <br /> ${provider.cityStateZip}
                             </address>
                             <p class="phone">${provider.phone}</p>
                         </div>
                         <div class="col">
-                        <button class="btn btn-sm btn-primary btn-block py-3" id=${index}>View more</button>
+                        <a class="btn btn-primary btn-block text-white py-3" id=${index}>View more</a>
                         </div>
                     </div>
-                    <p class="email mb-0"></p>
-
                     <div class="demographics">
                         ${demographicHTML} 
                     </div>
