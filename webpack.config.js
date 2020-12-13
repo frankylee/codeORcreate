@@ -4,7 +4,8 @@ module.exports = {
   entry: {
     provider: './src/provider.js',
     nav: './src/nav.js',
-    providers: './src/providersData.js'
+    providerData: './src/providerData.js',
+    providerSingleView: './src/providerSingleView.js'
   },
   output: {
     path: __dirname + "/dist",

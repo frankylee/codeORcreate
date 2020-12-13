@@ -42,7 +42,7 @@ class Providers {
                     <p class="email mb-0"></p>
 
                     <div class="demographics">
-                        ${demographicHTML}
+                        ${demographicHTML} 
                     </div>
                 </div>
             </div>
