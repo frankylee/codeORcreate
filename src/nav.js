@@ -12,7 +12,7 @@ function createNavBar() {
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
         <li class="nav-item" id="home">
-          <a class="nav-link mr-4 text-primary" href="./index.html">Home</a>
+          <a class="nav-link mr-4" href="./index.html">Home</a>
         </li>
         <li class="nav-item" id="providers">
           <a class="nav-link mr-4" href="./providers.html">Providers</a>
@@ -36,15 +36,21 @@ function renderNavBar() {
 
   if (activeLocation.includes("index")){
     let activeLink = document.getElementById("home");
+    let activeText = document.querySelector("#home .nav-link");
     activeLink.classList.add("active");
+    activeText.classList.add('text-primary');
   }
   else if (activeLocation.includes("provider")){
     let activeLink = document.getElementById("providers");
+    let activeText = document.querySelector("#providers .nav-link");
     activeLink.classList.add("active");
+    activeText.classList.add('text-primary');
   }
   else if (activeLocation.includes("about")) {
     let activeLink = document.getElementById("more");
+    let activeText = document.querySelector("#more .nav-link");
     activeLink.classList.add("active");
+    activeText.classList.add('text-primary');
   }
 }
 
