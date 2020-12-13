@@ -9,7 +9,8 @@ class Providers {
         this.providerCardUI = document.getElementById("provider-list")
         this.renderProviderList();
 
-        console.log(this.providerData);
+        //use this to see what's included in the objects, if needed
+        //console.log(this.providerData);
 
     }
 
@@ -51,7 +52,7 @@ class Providers {
 
     renderOneProviderDemographics(provider) {
         let html = ""; 
-        //for every demographic included in a provider, create demographic pills
+        //for every demographic included in a provider, create a demographic pill
         for(let i = 0; i < provider.demographics.length; i++) {
             html += `
             <span class="badge badge-pill badge-light px-3 py-2 my-1">${provider.demographics[i]}</span>
@@ -63,5 +64,3 @@ class Providers {
 
 window.onload = () => { new Providers() };
 
-//                    
-//                    <p class="website">${provider.program}</p>
