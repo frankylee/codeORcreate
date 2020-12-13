@@ -27,10 +27,10 @@ class Providers {
             <div class="card" id="provider-card">
                 <div class="card-body">
                     <h4 class="provider card-title">${provider.name}</h4>
-                    <h5 class="program mb-4">${provider.description}</h5>
+                    <h5 class="program mb-4">${provider.program}</h5>
                     <div class="row align-items-center">
                         <div class="details col-7">
-                            <address class="street-address mb-0">${provider.address}
+                            <address class="street-address mb-0">${provider.streetAddress} <br /> ${provider.cityStateZip}
                             </address>
                             <p class="phone">${provider.phone}</p>
                         </div>
@@ -39,7 +39,7 @@ class Providers {
                         </div>
                     </div>
                     <p class="email mb-0"></p>
-                    <p class="website">${provider.url}</p>
+
                     <div class="demographics">
                         ${demographicHTML}
                     </div>
@@ -62,3 +62,6 @@ class Providers {
 }
 
 window.onload = () => { new Providers() };
+
+//                    
+//                    <p class="website">${provider.program}</p>
